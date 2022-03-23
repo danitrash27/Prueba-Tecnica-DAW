@@ -1,12 +1,10 @@
-import category from './categorias.json';
+import categories from './categorias.json';
+import { CategoryCard } from './CategoryCard';
 
 export function CategoriesGrid(){
-    console.log(category);
     return (
         <ul>
-            {category.map(function(e){
-                return <li>{e}</li>
-            })}
+            {categories.map(category => <CategoryCard key="" categoria={category} />)}
         </ul>
     );
 }
