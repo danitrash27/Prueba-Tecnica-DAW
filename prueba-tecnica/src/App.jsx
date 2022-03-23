@@ -1,3 +1,12 @@
+import { CategoriesGrid } from "./CategoriesGrid";
+
 export function App(){
-  return <div>App</div>
+  return (
+    <main>
+      <section>
+        <CategoriesGrid></CategoriesGrid>
+      </section>
+      <section>Contenedor Frases</section>
+    </main>
+  );
 } 
